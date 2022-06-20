@@ -1,0 +1,24 @@
+{
+  "name": "firebase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viniciusz1/Firebase.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viniciusz1/Firebase/issues"
+  },
+  "homepage": "https://github.com/viniciusz1/Firebase#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "jest": "^28.1.1"
+  }
+}
