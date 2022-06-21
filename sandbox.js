@@ -1,8 +1,20 @@
 const crud = require('./crud');
 
-async function salvarDado(){
-    const savedData = await crud.save("pessoas", "FbI8reVMAb90RveeTfVb",
-    {nome: "Bruno", sobrenome: "Carvalho", idade: 123})
-    console.log(savedData)
+async function buscarDados(){
+    const dados = await crud.get('pessoas')
+    console.log(dados);
 }
-salvarDado()
+
+async function buscarDadoid(){
+    const dados = await crud.getById('pessoas', 'FbI8reVMAb90RveeTfVb')
+    console.log(dados);
+}
+
+async function deletar(){
+    const dados = await crud.remove('pessoas', 'FbI8reVMAb90RveeTfVb')
+    console.log(dados);
+}
+
+// buscarDados()
+// buscarDadoid()
+deletar();
